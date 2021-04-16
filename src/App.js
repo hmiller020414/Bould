@@ -3,6 +3,8 @@ import { Switch, Route, Link } from 'react-router-dom';
 import logo from './logo.svg'
 import './App.css';
 
+import Wall from './pages/Wall/Wall';
+
 const App = () => {
 
   return (
@@ -11,23 +13,26 @@ const App = () => {
         <Link to='/'><img className="logo" src={logo} alt="Bould Logo" /></Link>
         <nav>
           <Link to='/my-climbs'>my climbs</Link>
-          <Link to='www.brooklynboulders.com' target="_blank">join the gym</Link>
+          <a href='https://www.brooklynboulders.com' target="_blank" rel="noreferrer">join the gym</a>
         </nav>
       </header>
       <main>
         <Switch>
+          <Route path="/wall/:id" render={ routeProps => 
+            <Wall {...routeProps} />
+          } />
           <Route exact path="/">
             <div className="homepageContent">
               <div className="homepageImage">
-              <img src='../public/images/woman_climbing.JPG' alt='woman bouldering' />
+              <img src='images/woman_climbing.jpg' alt='woman bouldering' />
               </div>
               <div className="wallListContainer">
                 <ul className="wallList">
-                  <Link to='/'><li>arch wall</li></Link>
-                  <Link to='/'><li>back wall</li></Link>
-                  <Link to='/'><li>hole in the wall</li></Link>
-                  <Link to='/'><li>inside wall</li></Link>
-                  <Link to='/'><li>slant wall</li></Link>
+                  <Link to='/wall/arch'><li>arch wall</li></Link>
+                  <Link to='/wall/back'><li>back wall</li></Link>
+                  <Link to='/wall/hole'><li>hole in the wall</li></Link>
+                  <Link to='/wall/inside'><li>inside wall</li></Link>
+                  <Link to='/wall/slant'><li>slant wall</li></Link>
                 </ul>
               </div>
             </div>
