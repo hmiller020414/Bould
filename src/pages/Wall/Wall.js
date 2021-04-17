@@ -1,15 +1,12 @@
-import {useState, useEffect} from 'react';
-import Walls from '../../services/Walls'
 import Gallery from '../../components/Gallery/Gallery'
 
-const Wall = ({match}) => {
+const Wall = ({match, Walls}) => {
 
     const slug = match.params.id;
     const thisWall = Walls[slug];
 
-    const wallGallery = thisWall.length ? thisWall.map( c => <Gallery key={c.id} {...c} /> ): null;
+    const wallGallery = thisWall.length ? thisWall.map( c => <Gallery key={c.id} {...c} slug={slug} /> ): null;
     
-
     return (
         <>
             <div>

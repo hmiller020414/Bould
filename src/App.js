@@ -3,7 +3,10 @@ import { Switch, Route, Link } from 'react-router-dom';
 import logo from './logo.svg'
 import './App.css';
 
+import Walls from './services/Walls';
 import Wall from './pages/Wall/Wall';
+import Climb from './pages/Climb/Climb';
+
 
 const App = () => {
 
@@ -18,8 +21,11 @@ const App = () => {
       </header>
       <main>
         <Switch>
+          <Route path="/wall/:id/:id" render={ routeProps =>
+            <Climb {...routeProps} Walls={Walls} />
+          } />
           <Route path="/wall/:id" render={ routeProps => 
-            <Wall {...routeProps} />
+            <Wall {...routeProps} Walls={Walls} />
           } />
           <Route exact path="/">
             <div className="homepageContent">
