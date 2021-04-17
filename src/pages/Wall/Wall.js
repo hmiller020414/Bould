@@ -5,7 +5,7 @@ const Wall = ({match, Walls}) => {
     const slug = match.params.id;
     const thisWall = Walls[slug];
 
-    const wallGallery = thisWall.length ? thisWall.map( c => <Gallery key={c.id} {...c} slug={slug} /> ): null;
+    const wallGallery = thisWall.length ? thisWall.map( c => <Gallery key={c.id} {...c} /> ): null;
     
     return (
         <>

@@ -41,7 +41,9 @@ const App = () => {
           <Route path="/wall/:id" render={ routeProps => 
             <Wall {...routeProps} Walls={Walls} />
           } />
-          <Route exact path="/my-climbs" component={MyClimbs} />
+          <Route exact path="/my-climbs" render = { () =>
+            <MyClimbs myClimbs={myClimbs} />
+           } />
           <Route exact path="/">
             <div className="homepageContent">
               <div className="homepageImage">
