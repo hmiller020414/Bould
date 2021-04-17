@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 
 import logo from './logo.svg'
@@ -6,11 +7,22 @@ import './App.css';
 import Walls from './services/Walls';
 import Wall from './pages/Wall/Wall';
 import Climb from './pages/Climb/Climb';
+import MyClimbs from './pages/MyClimbs/MyClimbs'
 
 import WomanClimbing from './images/woman_climbing.jpg';
 
-
 const App = () => {
+
+  const [myClimbs, setMyClimbs] = useState([]);
+
+  const handleClimbFave = climb => {
+    setMyClimbs( prevMyClimbs => {
+      const faves = [...prevMyClimbs];
+      faves.push(climb);
+
+      return faves;
+    })
+  }
 
   return (
     <>
@@ -24,11 +36,12 @@ const App = () => {
       <main>
         <Switch>
           <Route path="/wall/:id/:id" render={ routeProps =>
-            <Climb {...routeProps} Walls={Walls} />
+            <Climb {...routeProps} Walls={Walls} onClimbFave={handleClimbFave} />
           } />
           <Route path="/wall/:id" render={ routeProps => 
             <Wall {...routeProps} Walls={Walls} />
           } />
+          <Route exact path="/my-climbs" component={MyClimbs} />
           <Route exact path="/">
             <div className="homepageContent">
               <div className="homepageImage">
