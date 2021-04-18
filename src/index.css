@@ -17,6 +17,12 @@ a, p {
   margin: 0;
 }
 
+h1 {
+  font-size: 100px;
+  margin: 0;
+  font-weight: bold;
+}
+
 /* navigation */
 header {
   display: flex;
@@ -76,6 +82,7 @@ nav {
   width: -moz-fit-content;
 }
 
+/* universal */
 .arch {
   color: #F254A6;
 }
@@ -96,11 +103,42 @@ nav {
   color: #2B82B9;
 }
 
-.galleryInner {
+/* wall */
+.wallContainer {
   display: flex;
 }
 
+.wallContent {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wallContent h1 {
+  margin-bottom: 50px;
+}
+
+.wallContent p {
+  padding-bottom: 30px;
+}
+
+/* gallery */
+.galleryOuter {
+  width: 50%;
+}
+
+.galleryInner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .gallerySingle {
-  width: 200px;
+  width: 33.33%;
+}
+
+.galleryImg {
+  width: 100%;
 }
 
