@@ -116,6 +116,11 @@ nav {
   justify-content: center;
 }
 
+.wallContentInner {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .wallContent h1 {
   margin-bottom: 50px;
 }
@@ -136,6 +141,7 @@ nav {
 
 .gallerySingle {
   width: 33.33%;
+  margin-bottom: -8px;
 }
 
 .galleryImg {
@@ -217,5 +223,24 @@ button.checkButton {
   font-size: 150px;
   bottom: -80px;
   right: -87px;
+}
+
+/* my climbs */
+.myClimbs {
+  display: flex;
+}
+
+.myClimbsContent {
+  width: 40%;
+}
+
+.myClimbsContentInner {
+  width: 80%;
+  margin: 25% auto 0 auto;
+  text-align: center;
+}
+
+.myClimbsContentInner p {
+  margin-top: 30px;
 }
 

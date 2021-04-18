@@ -10,9 +10,11 @@ const Wall = ({match, Walls}) => {
     return (
         <div className='wallContainer'>
             <div className='wallContent'>
-                <h1 className={slug}>{`${slug} wall`}</h1>
-                <p>click on a climb to preview it</p>
-                <p>once you’ve climbed it, rate it, add your notes<br />and save it to your completed climbs</p>
+                <div className='wallContentInner'>
+                    <h1 className={slug}>{`${slug} wall`}</h1>
+                    <p>click on a climb to preview it</p>
+                    <p>once you’ve climbed it, rate it, add your notes and save it to your completed climbs</p>
+                </div>
             </div>
             <div className='galleryOuter'>
                 <div className='galleryInner'>
