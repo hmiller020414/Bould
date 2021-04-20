@@ -55,7 +55,7 @@ const back = [
         color: 'green',
         rating: 'v0',
         location: 'back',
-        image: 'https://i.imgur.com/ci5MXqk.jpg',
+        image: 'https://i.imgur.com/TALY5NH.jpg',
         id: 8,
     },
     {

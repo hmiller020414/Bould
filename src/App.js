@@ -13,16 +13,16 @@ import WomanClimbing from './images/woman_climbing.jpg';
 
 const App = () => {
 
-  const [myClimbs, setMyClimbs] = useState([]);
+  // const [myClimbs, setMyClimbs] = useState([]);
 
-  const handleClimbFave = climb => {
-    setMyClimbs( prevMyClimbs => {
-      const faves = [...prevMyClimbs];
-      faves.push(climb);
+  // const handleClimbFave = climb => {
+  //   setMyClimbs( prevMyClimbs => {
+  //     const faves = [...prevMyClimbs];
+  //     faves.push(climb);
 
-      return faves;
-    })
-  }
+  //     return faves;
+  //   })
+  // }
 
   return (
     <>
@@ -36,13 +36,19 @@ const App = () => {
       <main>
         <Switch>
           <Route path="/wall/:id/:id" render={ routeProps =>
-            <Climb {...routeProps} Walls={Walls} onClimbFave={handleClimbFave} />
+            <Climb 
+              {...routeProps}
+              Walls={Walls}
+              // onClimbFave={handleClimbFave}
+            />
           } />
           <Route path="/wall/:id" render={ routeProps => 
             <Wall {...routeProps} Walls={Walls} />
           } />
           <Route exact path="/my-climbs" render = { () =>
-            <MyClimbs myClimbs={myClimbs} />
+            <MyClimbs
+              // myClimbs={myClimbs}
+            />
            } />
           <Route exact path="/">
             <div className="homepageContent">
