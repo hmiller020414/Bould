@@ -1,6 +1,23 @@
+import {useState} from 'react';
 import Checkmark from '../../images/checkmark.png'
 
-const Form = () => {
+const Form = ({onClimbFave, climb, toggleForm}) => {
+
+    const handleFave = e => {
+        e.preventDefault();
+        e.stopPropagation();
+        onClimbFave(climbDetails);
+        toggleForm();
+    }
+
+    const [climbDetails, setClimbDetails] = useState({...climb})
+
+    const handleChange = e =>
+    setClimbDetails( prevClimbDetails => ({
+      ...prevClimbDetails,
+      [e.target.name]: e.target.valueAsNumber || e.target.value
+    }));
+
     return (
         <div className='formOuter'>
             <form>
@@ -9,7 +26,8 @@ const Form = () => {
                     <span className='arch'>on a scale of 1 to 5, how much did this climb rock?</span>
                     <input
                         className="form-control"
-                        name="rating"
+                        name="rockability"
+                        onChange={handleChange}
                     />
                     </label>
                 </div>
@@ -20,6 +38,7 @@ const Form = () => {
                         className="form-control"
                         name="tries"
                         type="text"
+                        onChange={handleChange}
                     /> 
                     </label>
                 </div>
@@ -30,6 +49,7 @@ const Form = () => {
                         className="form-control"
                         name="date"
                         type="date"
+                        onChange={handleChange}
                     />
                     </label>
                 </div>
@@ -40,10 +60,11 @@ const Form = () => {
                         className="form-control"
                         name="notes"
                         rows="4"
+                        onChange={handleChange}
                     />
                     </label>
                 </div>
-                <button className='checkButton'><img src={Checkmark} alt='checkmark' /></button>
+                <button className='checkButton' onClick={handleFave}><img src={Checkmark} alt='checkmark' /></button>
             </form>
         </div>
     )

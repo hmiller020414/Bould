@@ -13,16 +13,16 @@ import WomanClimbing from './images/woman_climbing.jpg';
 
 const App = () => {
 
-  // const [myClimbs, setMyClimbs] = useState([]);
+  const [myClimbs, setMyClimbs] = useState([]);
 
-  // const handleClimbFave = climb => {
-  //   setMyClimbs( prevMyClimbs => {
-  //     const faves = [...prevMyClimbs];
-  //     faves.push(climb);
+  const handleClimbFave = climb => {
+    setMyClimbs( prevMyClimbs => {
+      const faves = [...prevMyClimbs];
+      faves.push(climb);
 
-  //     return faves;
-  //   })
-  // }
+      return faves;
+    })
+  }
 
   return (
     <>
@@ -39,7 +39,7 @@ const App = () => {
             <Climb 
               {...routeProps}
               Walls={Walls}
-              // onClimbFave={handleClimbFave}
+              onClimbFave={handleClimbFave}
             />
           } />
           <Route path="/wall/:id" render={ routeProps => 
@@ -47,7 +47,7 @@ const App = () => {
           } />
           <Route exact path="/my-climbs" render = { () =>
             <MyClimbs
-              // myClimbs={myClimbs}
+              myClimbs={myClimbs}
             />
            } />
           <Route exact path="/">

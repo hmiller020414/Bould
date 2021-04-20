@@ -5,18 +5,13 @@ import CloseIcon from '../../images/close-x-icon.png'
 import Checkmark from '../../images/checkmark.png'
 import Form from '../../components/Form/Form'
 
-const Climb = ({match, Walls}) => {
+const Climb = ({match, Walls, onClimbFave}) => {
 
     const id = parseInt(match.params.id)
 
     const climb = Object.keys(Walls)
         .flatMap(key => Walls[key])
         .find(climb => climb.id === id )
-
-    // const handleFave = e => {
-    //     e.stopPropagation();
-    //     onClimbFave(climb);
-    // }
 
     const [isFormVisible, setIsFormVisible] = useState(false);
 
@@ -32,7 +27,11 @@ const Climb = ({match, Walls}) => {
                 { isFormVisible ? (
                     <div className='singleClimbContentInner'>
                         <div className='climbForm'>
-                            <Form />
+                            <Form
+                                onClimbFave={onClimbFave}
+                                climb={climb}
+                                toggleForm={handleFormVisible}
+                            />
                         </div>
                     </div>     
                 ) : (
