@@ -23,7 +23,7 @@ const Form = ({onClimbFave, climb, toggleForm}) => {
             <form onSubmit={handleFave}>
                 <div className="form-group">
                     <label>
-                    <span className='arch'>on a scale of 1 to 5, how much did this climb rock?</span>
+                    <span className='arch'>on a scale of 1 to 5, how much did this climb rock?*</span>
                     <select
                         className="form-control"
                         name="rockability"
@@ -43,7 +43,7 @@ const Form = ({onClimbFave, climb, toggleForm}) => {
                 </div>
                 <div className="form-group">
                     <label>
-                    <span className='back'>how many tries did it take you?</span>
+                    <span className='back'>how many tries did it take you?*</span>
                     <input
                         className="form-control"
                         name="tries"
@@ -55,7 +55,7 @@ const Form = ({onClimbFave, climb, toggleForm}) => {
                 </div>
                 <div className="form-group">
                     <label>
-                    <span className='hole'>date of climb</span>
+                    <span className='hole'>date of climb*</span>
                     <input
                         className="form-control"
                         name="date"

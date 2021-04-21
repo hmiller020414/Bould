@@ -36,7 +36,7 @@ const App = () => {
       </header>
       <main>
         <Switch>
-          <Route path="/wall/:id/:id" render={ routeProps =>
+          <Route path="/climb/:id" render={ routeProps =>
             <Climb 
               {...routeProps}
               Walls={Walls}
