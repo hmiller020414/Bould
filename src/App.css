@@ -59,9 +59,7 @@ nav {
 @media only screen and (max-width: 1024px) {
   header {
     background-color: #fff;
-    position: fixed;
     width: 100%;
-    z-index: 99999;
   }
   
   .logoLink, .logo { height: 100px }
@@ -73,7 +71,6 @@ nav {
   .navLink { border-width: 2px }
 
   .homepageContent {
-    padding-top: 100px;
     flex-direction: column;
   }
 

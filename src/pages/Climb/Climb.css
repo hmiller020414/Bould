@@ -1,18 +1,32 @@
 /* single climb */
 .singleClimbOuter {
     display: flex;
+    margin-top: 50px;
 }
   
 .singleClimbContent {
-    width: 40%;
+    width: 50%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+.singleClimbContentInner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.singleClimbContent h1 {
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.singleClimbContent p {
+    margin-bottom: 30px;
 }
   
 .singleClimb {
-    width: 50%;
+    width: 40%;
 }
   
 .singleClimbImg img {
@@ -29,31 +43,12 @@
     right: -50px;
 }
   
-.singleClimbInner {
-    width: 70%;
-    margin: 0 auto;
-}
-  
-.singleClimbContent h1 {
-    text-transform: uppercase;
-    line-height: 100px;
-}
-  
 button.checkButton {
     width: fit-content;
     width: -moz-fit-content;
     background-color: unset;
     border: none;
     margin: 50px auto 0 auto;
-}
-  
-.singleClimbContent p {
-    margin-bottom: 30px;
-}
-  
-.singleClimbContentInner {
-    width: 57%;
-    margin: 0 auto;
 }
   
 .singleClimbDetails p {
@@ -65,15 +60,21 @@ button.checkButton {
     margin-top: 10px;
 }
   
-  .largeRating {
+.largeRating {
     position: absolute;
     font-family: 'HWT Mardell';
     font-size: 150px;
     bottom: -80px;
-    right: -87px;
-  }
+    right: -57px;
+    text-shadow: -5px -5px 13px rgba(255, 255, 255, 0.4)
+}
 
-  /* form */
+/* form */
+.climbForm {
+    width: 85%;
+    margin: 0 auto;
+}
+
 .form-group label {
     display: flex;
     flex-direction: column;
@@ -95,4 +96,86 @@ input.form-control, textarea.form-control, select.form-control {
     font-weight: bold;
     padding: 10px;
     box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+    .singleClimbOuter {
+        flex-direction: column-reverse;
+        margin-top: 25px;
+    }
+    
+    .singleClimbContent {
+        width: 100%;
+    }
+    
+    .singleClimbContentInner {
+        width: 100%;
+    }
+    
+    .climbDesktopCopy {
+        display: none;
+    }
+    
+    .climbSaveDetails {
+        display: flex;
+        background-color: mediumaquamarine;
+        justify-content: space-evenly;
+        height: 120px;
+    }
+    
+    .singleClimbContent p {
+        margin: 0;
+        align-self: center;
+        width: 35%;
+    }
+    
+    button.checkButton {
+        margin: 0;
+        display: flex;
+        height: fit-content;
+        align-self: center;
+        height: -moz-fit-content;
+    }
+    
+    button.checkButton img { width: 72px }
+
+    .singleClimb {
+        width: 100%;
+        margin-bottom: 33px;
+    }
+    
+    .singleClimbInner {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .largeRating {
+        font-size: 120px;
+        bottom: -48px;
+        right: -30px;
+        text-shadow: -3px -3px 9px rgba(255, 255, 255, 0.4);
+    }
+    
+    .singleClimbImg a {
+        width: 72px;
+        top: -26px;
+        right: -37px;
+    }
+
+    .climbForm {
+        width: 65%;
+        margin: 0 auto 100px auto;
+    }
+
+    form button.checkButton { margin: 0 auto }
+
+    .climbDetailsCopy {
+        width: 80%;
+        margin: 0 auto 100px auto;
+    }
+    
+    .climbDetailsCopy p {
+        width: 100%;
+        margin: 10px 0;
+    }
 }

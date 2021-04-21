@@ -14,7 +14,7 @@ const MyClimbs = ({myClimbs}) => {
             <div className='myClimbsContent'>
                 <div className='myClimbsContentInner'>
                     <h1>my climbs</h1>
-                    <p>these are my favorites routes!</p>
+                    <p>click on a climb review its details</p>
                 </div>
             </div>
             <div className='galleryOuter'>

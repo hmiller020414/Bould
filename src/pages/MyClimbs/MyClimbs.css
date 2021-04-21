@@ -1,18 +1,31 @@
 /* my climbs */
 .myClimbs {
-    display: flex;
-  }
+  display: flex;
+}
   
-  .myClimbsContent {
-    width: 40%;
-  }
-  
+.myClimbsContent {
+  width: 40%;
+}
+
+.myClimbsContentInner {
+  width: 80%;
+  margin: 25% auto 0 auto;
+  text-align: center;
+}
+
+.myClimbsContentInner p {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .myClimbs { flex-direction: column }
+
+  .myClimbsContent { width: 100% }
+
   .myClimbsContentInner {
-    width: 80%;
-    margin: 25% auto 0 auto;
-    text-align: center;
+    width: 67%;
+    margin: 0 auto 0 auto;
   }
-  
-  .myClimbsContentInner p {
-    margin-top: 30px;
-  }
+
+  .myClimbsContentInner p { margin: 18px 0 30px 0 }
+}

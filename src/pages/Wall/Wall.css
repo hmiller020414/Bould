@@ -12,12 +12,13 @@
 }
 
 .wallContentInner {
-    width: 80%;
+    width: 88%;
     margin: 0 auto;
 }
 
 .wallContent h1 {
     margin-bottom: 50px;
+    line-height: 90px;
 }
 
 .wallContent p {
@@ -27,6 +28,7 @@
   /* gallery */
 .galleryOuter {
     width: 50%;
+    margin-left: 5%;
 }
   
 .galleryInner {
@@ -41,4 +43,34 @@
   
 .galleryImg {
     width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wallContainer {
+        flex-direction: column;
+    }
+    
+    .wallContent {
+        width: 100%;
+    }
+    
+    .wallContent h1 {
+        margin-bottom: 25px;
+        line-height: unset;
+    }
+
+    .wallContentInner {
+        width: 67%;
+    }
+    
+    .galleryOuter {
+        width: 100%;
+        margin: 0;
+    }
+
+    .galleryImg {
+        padding: 0;
+    }
 }
