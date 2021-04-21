@@ -11,6 +11,7 @@ import MyClimbs from './pages/MyClimbs/MyClimbs'
 import NotFound from './pages/NotFound/NotFound'
 
 import WomanClimbing from './images/woman_climbing.jpg';
+import myClimbsIcon from './images/myClimbsIcon.png';
 
 const App = () => {
 
@@ -30,8 +31,11 @@ const App = () => {
       <header>
         <Link to='/' className='logoLink'><img className="logo" src={logo} alt="Bould Logo" /></Link>
         <nav>
-          <Link to='/my-climbs' className='navLink'>my climbs</Link>
-          <a href='https://www.brooklynboulders.com' className='navLink' target="_blank" rel="noreferrer">join the gym</a>
+          <Link to='/my-climbs' className='navLink m'>
+            <img src={myClimbsIcon} alt="my climbs journal" />
+          </Link>
+          <Link to='/my-climbs' className='navLink dt'>my climbs</Link>
+          <a href='https://www.brooklynboulders.com' className='navLink dt' target="_blank" rel="noreferrer">join the gym</a>
         </nav>
       </header>
       <main>

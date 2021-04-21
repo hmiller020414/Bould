@@ -24,6 +24,8 @@ nav {
   border-bottom: 3px solid black;
 }
 
+.navLink.m { display: none }
+
 /* homepage */
 .homepageContent {
   display: flex;
@@ -93,5 +95,69 @@ nav {
   .wallList li {
     font-size: 40px;
     margin: 0 auto 14px auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding-bottom: 14px;
+    position: fixed;
+    z-index: 99999;
+  }
+
+  .logoLink {
+    width: 100%;
+    margin: 10px 0 0 10px;
+  }
+
+  .logoLink, .logo {
+    height: 75px;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: fit-content;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .navLink.dt {
+    display: none;
+  }
+
+  .navLink.m {
+    display: block;
+    border: none;
+    height: 75px;
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  .navLink img {
+    height: 100%;
+  }
+
+  .homepageContent {
+    padding-top: 99px;
+  }
+
+  .homepageImage {
+    width: 100%;
+  }
+
+  .wallListContainer {
+    width: 90%;
+    align-self: unset;
+    margin: -20% auto 33px auto;
+  }
+
+  .wallList li {
+    font-size: 30px;
+    margin: 0 auto 20px auto;
+  }
+
+  .wallListContainer p {
+    width: 70%;
+    margin: 0 auto;
   }
 }

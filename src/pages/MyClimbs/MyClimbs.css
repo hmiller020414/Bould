@@ -17,6 +17,8 @@
   margin-top: 30px;
 }
 
+.mobile-small-logo { display: none }
+
 @media only screen and (max-width: 1024px) {
   .myClimbs { flex-direction: column }
 
@@ -28,4 +30,26 @@
   }
 
   .myClimbsContentInner p { margin: 18px 0 30px 0 }
+}
+
+@media only screen and (max-width: 1024px) {
+  .myClimbs {
+    padding-top: 99px;
+  }
+
+  .myClimbsContentInner {
+    width: 80%;
+  }
+
+  .myClimbsContentInner p {
+    margin: 8px 0 24px 0;
+  }
+
+  .mobile-small-logo {
+    display: flex;
+    margin: 45px 0;
+    justify-content: center;
+  }
+
+  .mobile-small-logo img { width: 70px }
 }

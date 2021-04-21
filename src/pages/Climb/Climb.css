@@ -118,7 +118,7 @@ input.form-control, textarea.form-control, select.form-control {
     
     .climbSaveDetails {
         display: flex;
-        background-color: mediumaquamarine;
+        background-color: #F2CD2A;
         justify-content: space-evenly;
         height: 120px;
     }
@@ -167,7 +167,7 @@ input.form-control, textarea.form-control, select.form-control {
         margin: 0 auto 100px auto;
     }
 
-    form button.checkButton { margin: 0 auto }
+    form button.checkButton { margin: 10px auto 0 auto }
 
     .climbDetailsCopy {
         width: 80%;
@@ -178,4 +178,38 @@ input.form-control, textarea.form-control, select.form-control {
         width: 100%;
         margin: 10px 0;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .singleClimbOuter {
+        padding-top: 150px;
+        margin: 0;
+    }
+    
+    .singleClimbInner {
+        width: 80%;
+    }
+    
+    .singleClimbImg a {
+        right: -24px;
+        top: -15px;
+        width: 44px;
+    }
+    
+    .largeRating {
+        font-size: 100px;
+        bottom: -40px;
+        right: -20px;
+    }
+
+    .singleClimbContent p { width: 54% }
+
+    .climbForm {
+        width: 80%;
+        margin: 0 auto 50px auto;
+    }
+
+    .climbDetailsCopy { margin-bottom: 50px }
+
+    .climbDetailsCopy p { width: 100% }
 }

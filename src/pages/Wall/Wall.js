@@ -1,6 +1,7 @@
 import Gallery from '../../components/Gallery/Gallery'
 import {useLocation, Redirect} from 'react-router-dom'
 import './Wall.css'
+import mobileLogo from '../../images/mobileLogo.png'
 
 const Wall = ({match, Walls}) => {
 
@@ -25,6 +26,9 @@ const Wall = ({match, Walls}) => {
                 <div className='galleryInner'>
                     {wallGallery}
                 </div>
+            </div>
+            <div className='mobile-small-logo'>
+                <img src={mobileLogo} alt='Small Bould logo'/>
             </div>
         </div>
     )

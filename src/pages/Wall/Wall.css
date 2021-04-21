@@ -1,7 +1,5 @@
 /* wall */
-.wallContainer {
-    display: flex;
-}
+.wallContainer { display: flex }
 
 .wallContent {
     width: 40%;
@@ -21,9 +19,9 @@
     line-height: 90px;
 }
 
-.wallContent p {
-    padding-bottom: 30px;
-}
+.wallContent p { padding-bottom: 30px }
+
+.mobile-small-logo { display: none }
 
   /* gallery */
 .galleryOuter {
@@ -48,29 +46,35 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .wallContainer {
-        flex-direction: column;
-    }
+    .wallContainer { flex-direction: column }
     
-    .wallContent {
-        width: 100%;
-    }
+    .wallContent {  width: 100% }
     
     .wallContent h1 {
         margin-bottom: 25px;
         line-height: unset;
     }
 
-    .wallContentInner {
-        width: 67%;
-    }
+    .wallContentInner { width: 67% }
     
     .galleryOuter {
         width: 100%;
         margin: 0;
     }
 
-    .galleryImg {
-        padding: 0;
+    .galleryImg { padding: 0 }
+}
+
+@media only screen and (max-width: 768px) {
+    .wallContainer { padding-top: 99px }
+
+    .gallerySingle { width: 100% }
+
+    .mobile-small-logo {
+        display: flex;
+        margin: 45px 0;
+        justify-content: center;
     }
+
+    .mobile-small-logo img { width: 70px }
 }

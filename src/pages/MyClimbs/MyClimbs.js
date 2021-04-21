@@ -2,6 +2,7 @@ import Gallery from '../../components/Gallery/Gallery'
 import {useLocation} from 'react-router-dom'
 
 import './MyClimbs.css'
+import mobileLogo from '../../images/mobileLogo.png'
 
 const MyClimbs = ({myClimbs}) => {
 
@@ -21,6 +22,9 @@ const MyClimbs = ({myClimbs}) => {
                 <div className='galleryInner'>
                     {completedClimbs}
                 </div>
+            </div>
+            <div className='mobile-small-logo'>
+                <img src={mobileLogo} alt='Small Bould logo'/>
             </div>
         </div>
     )

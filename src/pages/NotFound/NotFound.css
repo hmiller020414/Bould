@@ -49,3 +49,43 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .notFoundOuter {
+    padding-top: 100px;
+}
+
+  .mobileLogo {
+    display: flex;
+    width: 33%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+
+  .mobileLogo img {
+    width: 100%;
+  }
+
+  .notFoundCopy h2 {
+    font-size: 33px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .notFoundCopy h1 {
+    font-size: 240px;
+    position: fixed;
+    bottom: 0;
+    line-height: 130px;
+  }
+
+  .notFoundCopy {
+    height: fit-content;
+    height: -moz-fit-content;
+  }
+
+  .notFoundInner {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
