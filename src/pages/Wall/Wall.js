@@ -1,11 +1,15 @@
 import Gallery from '../../components/Gallery/Gallery'
+import {useLocation, Redirect} from 'react-router-dom'
 
 const Wall = ({match, Walls}) => {
 
+    const linkBackToPath = useLocation().pathname;
     const slug = match.params.id;
     const thisWall = Walls[slug];
 
-    const wallGallery = thisWall.length ? thisWall.map( c => <Gallery key={c.id} {...c} /> ): null;
+    if (!thisWall) {return <Redirect to="/404" /> }
+
+    const wallGallery = thisWall.length ? thisWall.map( c => <Gallery key={c.id} {...c} linkBack={linkBackToPath} /> ): null;
     
     return (
         <div className='wallContainer'>

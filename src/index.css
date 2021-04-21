@@ -255,7 +255,7 @@ button.checkButton {
 
 .form-group { padding: 10px 0 }
 
-input.form-control, textarea.form-control {
+input.form-control, textarea.form-control, select.form-control {
   width: 100%;
   max-width: 100%;
   border: 2px solid black;

@@ -20,15 +20,25 @@ const Form = ({onClimbFave, climb, toggleForm}) => {
 
     return (
         <div className='formOuter'>
-            <form>
+            <form onSubmit={handleFave}>
                 <div className="form-group">
                     <label>
                     <span className='arch'>on a scale of 1 to 5, how much did this climb rock?</span>
-                    <input
+                    <select
                         className="form-control"
                         name="rockability"
                         onChange={handleChange}
-                    />
+                        type="number"
+                        required
+                        defaultValue="" 
+                    >
+                        <option value="" hidden></option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                    </select>
                     </label>
                 </div>
                 <div className="form-group">
@@ -37,8 +47,9 @@ const Form = ({onClimbFave, climb, toggleForm}) => {
                     <input
                         className="form-control"
                         name="tries"
-                        type="text"
+                        type="number"
                         onChange={handleChange}
+                        required
                     /> 
                     </label>
                 </div>
@@ -50,6 +61,7 @@ const Form = ({onClimbFave, climb, toggleForm}) => {
                         name="date"
                         type="date"
                         onChange={handleChange}
+                        required
                     />
                     </label>
                 </div>
@@ -64,7 +76,7 @@ const Form = ({onClimbFave, climb, toggleForm}) => {
                     />
                     </label>
                 </div>
-                <button className='checkButton' onClick={handleFave}><img src={Checkmark} alt='checkmark' /></button>
+                <button className='checkButton'><img src={Checkmark} alt='checkmark' /></button>
             </form>
         </div>
     )

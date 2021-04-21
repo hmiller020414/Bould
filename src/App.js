@@ -8,6 +8,7 @@ import Walls from './services/Walls';
 import Wall from './pages/Wall/Wall';
 import Climb from './pages/Climb/Climb';
 import MyClimbs from './pages/MyClimbs/MyClimbs'
+import NotFound from './pages/NotFound/NotFound'
 
 import WomanClimbing from './images/woman_climbing.jpg';
 
@@ -40,6 +41,7 @@ const App = () => {
               {...routeProps}
               Walls={Walls}
               onClimbFave={handleClimbFave}
+              myClimbs={myClimbs}
             />
           } />
           <Route path="/wall/:id" render={ routeProps => 
@@ -67,6 +69,8 @@ const App = () => {
               </div>
             </div>
           </Route>
+          <Route path="/404" component={NotFound} />
+          <Route component={NotFound} />
         </Switch>
       </main>
     </>
