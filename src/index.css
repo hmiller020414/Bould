@@ -3,6 +3,7 @@ body {
   font-family: 'Circular Std', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a, p {
@@ -40,4 +41,10 @@ h1 {
 
 .slant {
   color: #2B82B9;
+}
+
+@media only screen and (max-width: 1024px) {
+  a, p { font-size: 24px }
+
+  h1 { font-size: 75px }
 }

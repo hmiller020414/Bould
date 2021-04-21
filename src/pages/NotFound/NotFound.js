@@ -1,8 +1,12 @@
 import './NotFound.css'
+import mobileLogo from '../../images/mobileLogo.png'
 
 const NotFound = () => (
     <section className="notFoundOuter">
       <div className="notFoundInner">
+        <div className="mobileLogo">
+          <img src={mobileLogo} alt='Small Bould logo' />
+        </div>
         <div className="notFoundCopy">
             <h2>we're
               <span className="arch"> c</span>

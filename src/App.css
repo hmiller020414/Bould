@@ -55,3 +55,46 @@ nav {
   width: fit-content;
   width: -moz-fit-content;
 }
+
+@media only screen and (max-width: 1024px) {
+  header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+  }
+  
+  .logoLink, .logo { height: 100px }
+  
+  .logoLink { width: 33% }
+
+  nav { width: 67% }
+
+  .navLink { border-width: 2px }
+
+  .homepageContent {
+    padding-top: 100px;
+    flex-direction: column;
+  }
+
+  .homepageImage {
+    margin: 0;
+    width: 60%;
+  }
+
+  .wallListContainer {
+    width: 66%;
+    background-color: #fff;
+    align-self: flex-end;
+    margin-top: -33%;
+  }
+
+  .wallListContainer p {
+    padding-top: 25px;
+  }
+
+  .wallList li {
+    font-size: 40px;
+    margin: 0 auto 14px auto;
+  }
+}

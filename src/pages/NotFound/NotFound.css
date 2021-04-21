@@ -1,26 +1,50 @@
 /* 404 page */
 .notFoundOuter {
-    background-color: #000;
-    height: calc(100vh - 160px);
-  }
+  background-color: #000;
+  height: calc(100vh - 160px);
+}
+
+.notFoundCopy {
+  color: #fff;
+  position: relative;
+}
+
+.mobileLogo {
+  display: none;
+}
   
-  .notFoundCopy {
-    color: #fff;
-    position: relative;
+.notFoundCopy h1 {
+  font-family: 'HWT Mardell';
+  font-size: 450px;
+  line-height: 230px;
+  position: fixed;
+  bottom: 0;
+  right: -10px;
+}
+  
+.notFoundCopy h2 {
+  font-size: 60px;
+  width: 40%;
+  margin: 0;
+  padding: 100px 0 0 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .notFoundOuter {
+    height: calc(100vh - 100px);
+    padding-top: 100px;
   }
   
   .notFoundCopy h1 {
-    font-family: 'HWT Mardell';
-    font-size: 450px;
-    line-height: 230px;
-    position: fixed;
-    bottom: 0;
-    right: -10px;
+    font-size: 480px;
+    line-height: 240px;
   }
-  
+
   .notFoundCopy h2 {
-    font-size: 60px;
-    width: 40%;
-    margin: 0;
-    padding: 100px 0 0 40px;
+    font-size: 45px;
+    width: 55%;
+    margin: 0 auto;
+    padding: 100px 0 0 0;
   }
+}
+
