@@ -1,0 +1,98 @@
+/* single climb */
+.singleClimbOuter {
+    display: flex;
+}
+  
+.singleClimbContent {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.singleClimb {
+    width: 50%;
+}
+  
+.singleClimbImg img {
+    width: 100%;
+}
+  
+.singleClimbImg {
+    position: relative;
+}
+  
+.singleClimbImg a {
+    position: absolute;
+    top: -40px;
+    right: -50px;
+}
+  
+.singleClimbInner {
+    width: 70%;
+    margin: 0 auto;
+}
+  
+.singleClimbContent h1 {
+    text-transform: uppercase;
+    line-height: 100px;
+}
+  
+button.checkButton {
+    width: fit-content;
+    width: -moz-fit-content;
+    background-color: unset;
+    border: none;
+    margin: 50px auto 0 auto;
+}
+  
+.singleClimbContent p {
+    margin-bottom: 30px;
+}
+  
+.singleClimbContentInner {
+    width: 57%;
+    margin: 0 auto;
+}
+  
+.singleClimbDetails p {
+    font-size: 20px;
+    padding-bottom: 24px;
+}
+  
+.singleClimbDetails {
+    margin-top: 10px;
+}
+  
+  .largeRating {
+    position: absolute;
+    font-family: 'HWT Mardell';
+    font-size: 150px;
+    bottom: -80px;
+    right: -87px;
+  }
+
+  /* form */
+.form-group label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.form-group label span {padding-bottom: 10px;}
+  
+.form-group { padding: 10px 0 }
+  
+input.form-control, textarea.form-control, select.form-control {
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid black;
+    font-family: 'Circular Std';
+    line-height: 20px;
+    font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box;
+}

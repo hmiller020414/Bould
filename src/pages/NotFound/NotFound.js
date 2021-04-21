@@ -1,3 +1,5 @@
+import './NotFound.css'
+
 const NotFound = () => (
     <section className="notFoundOuter">
       <div className="notFoundInner">

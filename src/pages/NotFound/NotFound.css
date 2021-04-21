@@ -1,0 +1,26 @@
+/* 404 page */
+.notFoundOuter {
+    background-color: #000;
+    height: calc(100vh - 160px);
+  }
+  
+  .notFoundCopy {
+    color: #fff;
+    position: relative;
+  }
+  
+  .notFoundCopy h1 {
+    font-family: 'HWT Mardell';
+    font-size: 450px;
+    line-height: 230px;
+    position: fixed;
+    bottom: 0;
+    right: -10px;
+  }
+  
+  .notFoundCopy h2 {
+    font-size: 60px;
+    width: 40%;
+    margin: 0;
+    padding: 100px 0 0 40px;
+  }

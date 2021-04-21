@@ -1,6 +1,8 @@
 import Gallery from '../../components/Gallery/Gallery'
 import {useLocation} from 'react-router-dom'
 
+import './MyClimbs.css'
+
 const MyClimbs = ({myClimbs}) => {
 
     const linkBackToPath = useLocation().pathname;

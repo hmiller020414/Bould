@@ -1,5 +1,6 @@
 import Gallery from '../../components/Gallery/Gallery'
 import {useLocation, Redirect} from 'react-router-dom'
+import './Wall.css'
 
 const Wall = ({match, Walls}) => {
 

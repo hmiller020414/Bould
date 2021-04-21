@@ -1,6 +1,8 @@
 import { Link, Redirect, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 
+import './Climb.css'
+
 import CloseIcon from '../../images/close-x-icon.png'
 import Form from '../../components/Form/Form'
 import ClimbDetails from '../../components/ClimbDetails/ClimbDetails'

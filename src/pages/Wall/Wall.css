@@ -1,0 +1,44 @@
+/* wall */
+.wallContainer {
+    display: flex;
+}
+
+.wallContent {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wallContentInner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wallContent h1 {
+    margin-bottom: 50px;
+}
+
+.wallContent p {
+    padding-bottom: 30px;
+}
+
+  /* gallery */
+.galleryOuter {
+    width: 50%;
+}
+  
+.galleryInner {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.gallerySingle {
+    width: 33.33%;
+    margin-bottom: -8px;
+}
+  
+.galleryImg {
+    width: 100%;
+}
