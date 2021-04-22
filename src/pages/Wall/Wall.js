@@ -9,8 +9,10 @@ const Wall = ({match, Walls}) => {
     const slug = match.params.id;
     const thisWall = Walls[slug];
 
+    //if no wall matches the url, redirect to 404
     if (!thisWall) {return <Redirect to="/404" /> }
 
+    //show gallery if thisWall has climbs
     const wallGallery = thisWall.length ? thisWall.map( c => <Gallery key={c.id} {...c} linkBack={linkBackToPath} /> ): null;
     
     return (

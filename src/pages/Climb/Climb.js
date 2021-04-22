@@ -13,6 +13,7 @@ const Climb = ({match, Walls, onClimbFave, myClimbs}) => {
     const location = useLocation()
     const id = parseInt(match.params.id)
 
+    // get the correct climb based on the url id
     const climb = Object.keys(Walls)
         .flatMap(key => Walls[key])
         .find(climb => climb.id === id )
@@ -23,6 +24,7 @@ const Climb = ({match, Walls, onClimbFave, myClimbs}) => {
         })
     }
 
+    // if no climb matches the id, redirect to 404
     if (!climb) {return <Redirect to="/404" /> }
 
     const linkBack = location?.state?.linkBack || `/wall/${climb.location}`

@@ -17,6 +17,7 @@ const App = () => {
 
   const [myClimbs, setMyClimbs] = useState([]);
 
+  // add a climb to my climbs
   const handleClimbFave = climb => {
     setMyClimbs( prevMyClimbs => {
       const faves = [...prevMyClimbs];

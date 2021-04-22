@@ -3,6 +3,7 @@ import Checkmark from '../../images/checkmark.png'
 
 const Form = ({onClimbFave, climb, toggleForm}) => {
 
+    //on form submit, add climb details to climb and turn form off which will trigger display of details
     const handleFave = e => {
         e.preventDefault();
         e.stopPropagation();
@@ -12,6 +13,7 @@ const Form = ({onClimbFave, climb, toggleForm}) => {
 
     const [climbDetails, setClimbDetails] = useState({...climb})
 
+    //save form field entries
     const handleChange = e =>
     setClimbDetails( prevClimbDetails => ({
       ...prevClimbDetails,

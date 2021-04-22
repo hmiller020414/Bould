@@ -8,6 +8,7 @@ const MyClimbs = ({myClimbs}) => {
 
     const linkBackToPath = useLocation().pathname;
 
+    //show gallery if any climbs have been saved to my climbs
     const completedClimbs = myClimbs.length ? myClimbs.map( c => <Gallery key={c.id} {...c} linkBack={linkBackToPath} />) : null;
 
     return (

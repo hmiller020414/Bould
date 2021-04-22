@@ -5,6 +5,7 @@ const ClimbDetails = ({toggleForm, myClimbs, id}) => {
     const savedClimb = myClimbs.find( climb => climb.id===id);
     const date = savedClimb ? new Date(savedClimb.date) : null;
     
+    // if a climb has details, display its details. else, display starting copy
     const hasBeenClimbed = savedClimb ?
         <div className='singleClimbContentInner'>
             <div className='climbDetailsCopy'>
