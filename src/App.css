@@ -47,12 +47,12 @@ nav {
 }
 
 .wallList {
-  padding: 0;
+  padding: 20px 0 0 0;
 }
 
 .wallList li {
   list-style-type: none;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 55px;
   margin: 0 auto 20px auto;
   width: fit-content;
