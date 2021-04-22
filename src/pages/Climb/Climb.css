@@ -88,7 +88,7 @@ input.form-control, textarea.form-control, select.form-control {
     width: 100%;
     max-width: 100%;
     border: 2px solid black;
-    font-family: 'Circular Std';
+    font-family: canada-type-gibson, sans-serif;
     line-height: 20px;
     font-weight: bold;
     padding: 10px;

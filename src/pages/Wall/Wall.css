@@ -78,5 +78,8 @@
         justify-content: center;
     }
 
-    .mobile-small-logo img { width: 70px }
+    .mobile-small-logo img {
+        width: 70px;
+        height: 81px;
+    }
 }
