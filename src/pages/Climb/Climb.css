@@ -62,7 +62,7 @@ button.checkButton {
   
 .largeRating {
     position: absolute;
-    font-family: 'HWT Mardell';
+    font-family: hwt-mardell;
     font-size: 150px;
     bottom: -80px;
     right: -57px;

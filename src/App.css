@@ -16,7 +16,8 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 70%;
+  width: 60%;
+  margin-left: 10%;
 }
 
 .navLink {
@@ -37,11 +38,11 @@ nav {
 
 .homepageImage {
   margin-left: 20px;
-  width: 30%;
+  width: 40%;
 }
 
 .wallListContainer {
-  width: 70%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -68,7 +69,10 @@ nav {
   
   .logoLink { width: 33% }
 
-  nav { width: 67% }
+  nav {
+    width: 67%;
+    margin-left: 0;
+  }
 
   .navLink { border-width: 2px }
 
@@ -85,7 +89,7 @@ nav {
     width: 66%;
     background-color: #fff;
     align-self: flex-end;
-    margin-top: -33%;
+    margin: -33% 0 0 0;
   }
 
   .wallListContainer p {

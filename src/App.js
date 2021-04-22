@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 
-import logo from './logo.svg'
+import logo from './images/bould.png'
 import './App.css';
 
 import Walls from './services/Walls';
